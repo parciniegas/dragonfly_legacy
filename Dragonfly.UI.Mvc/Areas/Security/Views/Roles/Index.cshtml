@@ -1,0 +1,30 @@
+﻿@using NonFactors.Mvc.Grid
+@Html.Partial("_Header")
+
+@{
+    ViewBag.Title = "Roles";
+}
+
+@Html.AjaxGrid(Url.Action("Grid", new { param = "value" }))
+
+@section styles
+{
+    <link href="~/Content/MvcGrid/mvc-grid.css" rel="stylesheet" />
+    <style>
+        .name {
+            width: 250px;
+        }
+
+        .link {
+            width: 30px;
+        }
+    </style>
+}
+
+@section scripts
+{
+    <script src="~/Scripts/MvcGrid/mvc-grid.js"></script>
+    <script>
+        $('.mvc-grid').mvcgrid();
+    </script>
+}

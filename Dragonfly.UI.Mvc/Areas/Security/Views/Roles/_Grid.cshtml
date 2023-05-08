@@ -1,0 +1,21 @@
+﻿@using Dragonfly.UI.Mvc.Helpers
+@using NonFactors.Mvc.Grid
+@model IEnumerable<Dragonfly.Core.Security.Role>
+
+@(
+ Html.Grid(Model).Named("Roles")
+            .Build(columns =>
+            {
+                columns.Add(model => model.RoleId)
+                    .RenderedAs(model => @Html.IconActionLink("glyphicon glyphicon-edit", Url.Action("Edit", "Roles", new { id = model.RoleId })))
+                    .Encoded(false).Css("link").Filterable(false);
+                columns.Add(model => model.Name).Titled("Nombre").Sortable(true).Css("name");
+                columns.Add(model => model.Description).Titled("Descripción");
+            }
+    ).Pageable(pager =>
+    {
+        pager.RowsPerPage = 5;
+    })
+    .Sortable()
+    .Empty("No hay roles configurados")
+)

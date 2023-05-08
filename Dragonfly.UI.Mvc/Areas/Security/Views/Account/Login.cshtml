@@ -1,0 +1,97 @@
+﻿@using Dragonfly.UI.Mvc.Helpers
+@model Dragonfly.Core.Security.User
+
+@{
+    Layout = null;
+    ViewBag.Title = "Iniciar Sesión";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="panel panel-primary">
+                <div class="panel-heading ">
+                    <h4>Autenticación OTP</h4>
+                </div>
+                <div class="panel-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-6">
+                                <br />
+                                <br />
+                                <div id="LoginDialog" class="well well-lg">
+                                    <div class="text-center">
+                                        <img src="~/Content/images/logo.jpg" alt="logo" />
+                                    </div>
+                                    <div class="lead text-center">
+                                        Iniciar sesión
+                                        <hr class="style-two" />
+                                    </div>
+                                    @using (Html.BeginForm("Login", "Account", new { ViewBag.ReturnUrl }, FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <div class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                @Html.LabelFor(model => model.LoginName, new { @class = "control-label col-sm-3" })
+                                                <div class="col-sm-9">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                                        @Html.EditorFor(model => model.LoginName, new { htmlAttributes = new { @class = "form-control", placeholder = "usuario" } })
+                                                    </div>
+                                                    @Html.ValidationMessageFor(model => model.LoginName, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                @Html.LabelFor(model => model.Password, new { @class = "control-label col-sm-3" })
+                                                <div class="col-sm-9">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "contraseña", type = "password" } })
+                                                    </div>
+                                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-3"></div>
+                                                <div class="col-sm-9">
+                                                    @Html.SubmitButton("btnOk", "Aceptar", new { @class = "btn btn-primary" })
+                                                    @*@Html.ActionLink(@Login.ForgotPassword, "Remember")*@
+                                                </div>
+                                            </div>
+                                            <div class="alert-danger">
+                                                @Html.ValidationSummary()
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-sm-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - GML Software</p>
+            </footer>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+</body>
+
+</html>

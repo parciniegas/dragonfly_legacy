@@ -1,0 +1,428 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Infraestructure", "0. Infraestructure", "{4191ADA7-E358-4365-9A12-FA5E42A7BDE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. DataAccess", "1. DataAccess", "{CCD386EF-13CA-4AAD-AD75-E0B797E9426D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{DCBB52C6-F8F7-4446-9005-6BCDA743B222}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Application", "3. Application", "{DDADDFFB-395F-4332-AB25-E37285118B22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Services", "4. Services", "{CD6DB604-B09E-4C9D-B25A-86C0840744AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. UI", "5. UI", "{76BEB189-A47B-4CFC-95C9-C8600DE9147E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core", "Dragonfly.Core\Dragonfly.Core.csproj", "{61CC0862-7AB0-4D49-B435-0850D33EBF5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.DataAccess.Core", "Dragonfly.DataAccess.Core\Dragonfly.DataAccess.Core.csproj", "{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.DataAccess.EF", "Dragonfly.DataAccess.EF\Dragonfly.DataAccess.EF.csproj", "{69F73275-9338-4983-8459-7E78880EF943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Domain", "Dragonfly.Domain\Dragonfly.Domain.csproj", "{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core.Security", "Dragonfly.Core.Security\Dragonfly.Core.Security.csproj", "{B24D84DC-5372-42A3-809C-B76F8445DF65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Domain.Contracts", "DragonFly.Domain.Contracts\Dragonfly.Domain.Contracts.csproj", "{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Application", "DragonFly.Application\Dragonfly.Application.csproj", "{72C67E3D-161F-44D2-B145-757511CE0A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Application.Contracts", "DragonFly.Application.Contracts\Dragonfly.Application.Contracts.csproj", "{B25F909E-E287-48F4-A889-F15962AD3462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Services", "Dragonfly.Services\Dragonfly.Services.csproj", "{C8A52019-08D6-43DB-8EFD-D106E250A854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core.Mvc", "Dragonfly.Core.Mvc\Dragonfly.Core.Mvc.csproj", "{49404EAF-BADD-4BB2-914A-6270C105E1A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.UI.Mvc", "Dragonfly.UI.Mvc\Dragonfly.UI.Mvc.csproj", "{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Domain.Services", "Dragonfly.Domain.Services\Dragonfly.Domain.Services.csproj", "{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. Libraries", "9. Libraries", "{EF11EA07-60AF-449B-9D92-756932155D44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grid", "Grid", "{5A223933-54EF-46AF-A231-12AF4DD5EF40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. Test Apps", "8. Test Apps", "{90D0D24E-DC2B-4AC4-9F48-25DF37506054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.TestApps.TestDataAccess", "Dragonfly.TestApps.TestDataAccess\Dragonfly.TestApps.TestDataAccess.csproj", "{2F76E309-571E-492B-A559-DBF2E2E29344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTPGenerator", "OTPGenerator\OTPGenerator.csproj", "{EF6615DE-68AC-400F-A977-940C76358E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Validator", "Dragonfly.Validator\Dragonfly.Validator.csproj", "{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Twitter", "Dragonfly.Twitter\Dragonfly.Twitter.csproj", "{D6670B89-6443-44E2-ACDC-9970154AA891}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D6015482-9D9D-4F7F-97C4-C79D4CF6DBB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core.Test", "Dragonfly.Core.Test\Dragonfly.Core.Test.csproj", "{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core.Diagnostics", "Dragonfly.Core.Diagnostics\Dragonfly.Core.Diagnostics.csproj", "{87BD5F07-7A5C-4F26-9807-60278531A460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Core.Http", "Dragonfly.Core.Http\Dragonfly.Core.Http.csproj", "{ED116978-0450-4E83-938D-3CC1AF6DC0AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Scheduler", "Dragonfly.Scheduler\Dragonfly.Scheduler.csproj", "{4A55CB20-23A6-439F-A80E-06960570437D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.Batch", "Dragonfly.Batch\Dragonfly.Batch.csproj", "{45CA2964-4094-4633-94F6-4151339EC494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.TestApps.TestBatch", "Dragonfly.TestApps.TestBatch\Dragonfly.TestApps.TestBatch.csproj", "{70847D80-1D49-481C-836F-6C8826003854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.FlatFileHelper", "Dragonfly.FlatFileHelper\Dragonfly.FlatFileHelper.csproj", "{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.TestApps.TestFileOperations", "Dragonfly.TestApps.TestFileOperations\Dragonfly.TestApps.TestFileOperations.csproj", "{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{04383BF9-B4C7-4EB5-862C-2C9AA6F57ABE}"
+	ProjectSection(SolutionItems) = preProject
+		Test Files\Products.csv = Test Files\Products.csv
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonfly.FTP", "Dragonfly.FTP\Dragonfly.FTP.csproj", "{E963B766-56BF-4966-8917-88C1EE69D61A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugNET2|Any CPU = DebugNET2|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseNET2|Any CPU = ReleaseNET2|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{69F73275-9338-4983-8459-7E78880EF943}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{B24D84DC-5372-42A3-809C-B76F8445DF65}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{72C67E3D-161F-44D2-B145-757511CE0A88}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{B25F909E-E287-48F4-A889-F15962AD3462}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A52019-08D6-43DB-8EFD-D106E250A854}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{2F76E309-571E-492B-A559-DBF2E2E29344}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6615DE-68AC-400F-A977-940C76358E97}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{D6670B89-6443-44E2-ACDC-9970154AA891}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{87BD5F07-7A5C-4F26-9807-60278531A460}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{4A55CB20-23A6-439F-A80E-06960570437D}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{45CA2964-4094-4633-94F6-4151339EC494}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{70847D80-1D49-481C-836F-6C8826003854}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.DebugNET2|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.DebugNET2|Any CPU.Build.0 = Debug|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.ReleaseNET2|Any CPU.ActiveCfg = Release|Any CPU
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B}.ReleaseNET2|Any CPU.Build.0 = Release|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.DebugNET2|Any CPU.ActiveCfg = DebugNET2|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.DebugNET2|Any CPU.Build.0 = DebugNET2|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.ReleaseNET2|Any CPU.ActiveCfg = ReleaseNET2|Any CPU
+		{E963B766-56BF-4966-8917-88C1EE69D61A}.ReleaseNET2|Any CPU.Build.0 = ReleaseNET2|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61CC0862-7AB0-4D49-B435-0850D33EBF5A} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{8E80E286-C191-4E73-AEE9-8B8C6163CE4D} = {CCD386EF-13CA-4AAD-AD75-E0B797E9426D}
+		{69F73275-9338-4983-8459-7E78880EF943} = {CCD386EF-13CA-4AAD-AD75-E0B797E9426D}
+		{5A7B6B00-EE8D-45FF-BE8E-AC34C04E8D25} = {DCBB52C6-F8F7-4446-9005-6BCDA743B222}
+		{B24D84DC-5372-42A3-809C-B76F8445DF65} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{7F5E5494-4F4B-470E-BAB1-D3AC749DF7D7} = {DCBB52C6-F8F7-4446-9005-6BCDA743B222}
+		{72C67E3D-161F-44D2-B145-757511CE0A88} = {DDADDFFB-395F-4332-AB25-E37285118B22}
+		{B25F909E-E287-48F4-A889-F15962AD3462} = {DDADDFFB-395F-4332-AB25-E37285118B22}
+		{C8A52019-08D6-43DB-8EFD-D106E250A854} = {CD6DB604-B09E-4C9D-B25A-86C0840744AC}
+		{49404EAF-BADD-4BB2-914A-6270C105E1A2} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{D7C9E902-5862-4C7D-9D4C-B62C60B879FF} = {76BEB189-A47B-4CFC-95C9-C8600DE9147E}
+		{0D9A54F7-9049-41AC-A8C2-0F21B0BE5BDD} = {DCBB52C6-F8F7-4446-9005-6BCDA743B222}
+		{5A223933-54EF-46AF-A231-12AF4DD5EF40} = {EF11EA07-60AF-449B-9D92-756932155D44}
+		{2F76E309-571E-492B-A559-DBF2E2E29344} = {90D0D24E-DC2B-4AC4-9F48-25DF37506054}
+		{EF6615DE-68AC-400F-A977-940C76358E97} = {90D0D24E-DC2B-4AC4-9F48-25DF37506054}
+		{7B02B537-CF3B-4ECD-BAFE-3597C6024C8F} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{D6670B89-6443-44E2-ACDC-9970154AA891} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{D6015482-9D9D-4F7F-97C4-C79D4CF6DBB5} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{C62D03BC-3797-4AEF-AB73-843FFB27BF0D} = {D6015482-9D9D-4F7F-97C4-C79D4CF6DBB5}
+		{87BD5F07-7A5C-4F26-9807-60278531A460} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{ED116978-0450-4E83-938D-3CC1AF6DC0AA} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{4A55CB20-23A6-439F-A80E-06960570437D} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{45CA2964-4094-4633-94F6-4151339EC494} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{70847D80-1D49-481C-836F-6C8826003854} = {90D0D24E-DC2B-4AC4-9F48-25DF37506054}
+		{3B07A1EF-30F4-40FB-91DA-2F16B1F13593} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+		{11ECED41-91BB-4CBB-BFC2-C913AEA46E7B} = {90D0D24E-DC2B-4AC4-9F48-25DF37506054}
+		{E963B766-56BF-4966-8917-88C1EE69D61A} = {4191ADA7-E358-4365-9A12-FA5E42A7BDE2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 26
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://parciniegas.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DragonFly.Application.Contracts\\Dragonfly.Application.Contracts.csproj
+		SccProjectTopLevelParentUniqueName1 = Dragonfly.sln
+		SccProjectName1 = DragonFly.Application.Contracts
+		SccLocalPath1 = DragonFly.Application.Contracts
+		SccProjectUniqueName2 = DragonFly.Application\\Dragonfly.Application.csproj
+		SccProjectTopLevelParentUniqueName2 = Dragonfly.sln
+		SccProjectName2 = DragonFly.Application
+		SccLocalPath2 = DragonFly.Application
+		SccProjectUniqueName3 = Dragonfly.Batch\\Dragonfly.Batch.csproj
+		SccProjectTopLevelParentUniqueName3 = Dragonfly.sln
+		SccProjectName3 = Dragonfly.Batch
+		SccLocalPath3 = Dragonfly.Batch
+		SccProjectUniqueName4 = Dragonfly.Core.Diagnostics\\Dragonfly.Core.Diagnostics.csproj
+		SccProjectTopLevelParentUniqueName4 = Dragonfly.sln
+		SccProjectName4 = Dragonfly.Core.Diagnostics
+		SccLocalPath4 = Dragonfly.Core.Diagnostics
+		SccProjectUniqueName5 = Dragonfly.Core.Http\\Dragonfly.Core.Http.csproj
+		SccProjectTopLevelParentUniqueName5 = Dragonfly.sln
+		SccProjectName5 = Dragonfly.Core.Http
+		SccLocalPath5 = Dragonfly.Core.Http
+		SccProjectUniqueName6 = Dragonfly.Core.Mvc\\Dragonfly.Core.Mvc.csproj
+		SccProjectTopLevelParentUniqueName6 = Dragonfly.sln
+		SccProjectName6 = Dragonfly.Core.Mvc
+		SccLocalPath6 = Dragonfly.Core.Mvc
+		SccProjectUniqueName7 = Dragonfly.Core.Security\\Dragonfly.Core.Security.csproj
+		SccProjectTopLevelParentUniqueName7 = Dragonfly.sln
+		SccProjectName7 = Dragonfly.Core.Security
+		SccLocalPath7 = Dragonfly.Core.Security
+		SccProjectUniqueName8 = Dragonfly.Core.Test\\Dragonfly.Core.Test.csproj
+		SccProjectTopLevelParentUniqueName8 = Dragonfly.sln
+		SccProjectName8 = Dragonfly.Core.Test
+		SccLocalPath8 = Dragonfly.Core.Test
+		SccProjectUniqueName9 = Dragonfly.Core\\Dragonfly.Core.csproj
+		SccProjectTopLevelParentUniqueName9 = Dragonfly.sln
+		SccProjectName9 = Dragonfly.Core
+		SccLocalPath9 = Dragonfly.Core
+		SccProjectUniqueName10 = Dragonfly.DataAccess.Core\\Dragonfly.DataAccess.Core.csproj
+		SccProjectTopLevelParentUniqueName10 = Dragonfly.sln
+		SccProjectName10 = Dragonfly.DataAccess.Core
+		SccLocalPath10 = Dragonfly.DataAccess.Core
+		SccProjectUniqueName11 = Dragonfly.DataAccess.EF\\Dragonfly.DataAccess.EF.csproj
+		SccProjectTopLevelParentUniqueName11 = Dragonfly.sln
+		SccProjectName11 = Dragonfly.DataAccess.EF
+		SccLocalPath11 = Dragonfly.DataAccess.EF
+		SccProjectUniqueName12 = DragonFly.Domain.Contracts\\Dragonfly.Domain.Contracts.csproj
+		SccProjectTopLevelParentUniqueName12 = Dragonfly.sln
+		SccProjectName12 = DragonFly.Domain.Contracts
+		SccLocalPath12 = DragonFly.Domain.Contracts
+		SccProjectUniqueName13 = Dragonfly.Domain.Services\\Dragonfly.Domain.Services.csproj
+		SccProjectTopLevelParentUniqueName13 = Dragonfly.sln
+		SccProjectName13 = Dragonfly.Domain.Services
+		SccLocalPath13 = Dragonfly.Domain.Services
+		SccProjectUniqueName14 = Dragonfly.Domain\\Dragonfly.Domain.csproj
+		SccProjectTopLevelParentUniqueName14 = Dragonfly.sln
+		SccProjectName14 = Dragonfly.Domain
+		SccLocalPath14 = Dragonfly.Domain
+		SccProjectUniqueName15 = Dragonfly.FlatFileHelper\\Dragonfly.FlatFileHelper.csproj
+		SccProjectTopLevelParentUniqueName15 = Dragonfly.sln
+		SccProjectName15 = Dragonfly.FlatFileHelper
+		SccLocalPath15 = Dragonfly.FlatFileHelper
+		SccProjectUniqueName16 = Dragonfly.FTP\\Dragonfly.FTP.csproj
+		SccProjectTopLevelParentUniqueName16 = Dragonfly.sln
+		SccProjectName16 = Dragonfly.FTP
+		SccLocalPath16 = Dragonfly.FTP
+		SccProjectUniqueName17 = Dragonfly.Scheduler\\Dragonfly.Scheduler.csproj
+		SccProjectTopLevelParentUniqueName17 = Dragonfly.sln
+		SccProjectName17 = Dragonfly.Scheduler
+		SccLocalPath17 = Dragonfly.Scheduler
+		SccProjectUniqueName18 = Dragonfly.Services\\Dragonfly.Services.csproj
+		SccProjectTopLevelParentUniqueName18 = Dragonfly.sln
+		SccProjectName18 = Dragonfly.Services
+		SccLocalPath18 = Dragonfly.Services
+		SccProjectUniqueName19 = Dragonfly.TestApps.TestBatch\\Dragonfly.TestApps.TestBatch.csproj
+		SccProjectTopLevelParentUniqueName19 = Dragonfly.sln
+		SccProjectName19 = Dragonfly.TestApps.TestBatch
+		SccLocalPath19 = Dragonfly.TestApps.TestBatch
+		SccProjectUniqueName20 = Dragonfly.TestApps.TestDataAccess\\Dragonfly.TestApps.TestDataAccess.csproj
+		SccProjectTopLevelParentUniqueName20 = Dragonfly.sln
+		SccProjectName20 = Dragonfly.TestApps.TestDataAccess
+		SccLocalPath20 = Dragonfly.TestApps.TestDataAccess
+		SccProjectUniqueName21 = Dragonfly.TestApps.TestFileOperations\\Dragonfly.TestApps.TestFileOperations.csproj
+		SccProjectTopLevelParentUniqueName21 = Dragonfly.sln
+		SccProjectName21 = Dragonfly.TestApps.TestFileOperations
+		SccLocalPath21 = Dragonfly.TestApps.TestFileOperations
+		SccProjectUniqueName22 = Dragonfly.Twitter\\Dragonfly.Twitter.csproj
+		SccProjectTopLevelParentUniqueName22 = Dragonfly.sln
+		SccProjectName22 = Dragonfly.Twitter
+		SccLocalPath22 = Dragonfly.Twitter
+		SccProjectUniqueName23 = Dragonfly.UI.Mvc\\Dragonfly.UI.Mvc.csproj
+		SccProjectTopLevelParentUniqueName23 = Dragonfly.sln
+		SccProjectName23 = Dragonfly.UI.Mvc
+		SccLocalPath23 = Dragonfly.UI.Mvc
+		SccProjectUniqueName24 = Dragonfly.Validator\\Dragonfly.Validator.csproj
+		SccProjectTopLevelParentUniqueName24 = Dragonfly.sln
+		SccProjectName24 = Dragonfly.Validator
+		SccLocalPath24 = Dragonfly.Validator
+		SccProjectUniqueName25 = OTPGenerator\\OTPGenerator.csproj
+		SccProjectTopLevelParentUniqueName25 = Dragonfly.sln
+		SccProjectName25 = OTPGenerator
+		SccLocalPath25 = OTPGenerator
+	EndGlobalSection
+EndGlobal

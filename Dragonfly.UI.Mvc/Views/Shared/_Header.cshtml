@@ -1,0 +1,17 @@
+﻿@using Dragonfly.UI.Mvc.Helpers
+<div class="row">
+    <div class="col-md-6">
+        @Html.ButtonActionLink(@Url.Action("Create"), "Nuevo", "glyphicon-plus", new { @class = @"btn btn-primary btn-sm", data_modal = "" })
+    </div>
+    <div class="col-md-6">
+        <div class="form-group form-inline pull-right">
+                <div class="input-group input-group-sm ">
+                    <input type="text" class="form-control" placeholder="ingrese el texto a buscar..." aria-describedby="sizing-addon3">
+                    <span class="input-group-btn">
+                        <a class="btn btn-primary" href=@Url.Action("Search")>Buscar</a>
+                    </span>
+                </div>
+            </div>
+    </div>
+</div>
+<p></p>

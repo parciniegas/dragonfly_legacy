@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B24D84DC-5372-42A3-809C-B76F8445DF65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dragonfly.Core.Security</RootNamespace>
+    <AssemblyName>Dragonfly.Core.Security</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implementations\Authentication.cs" />
+    <Compile Include="Implementations\AuthenticationFactory.cs" />
+    <Compile Include="Implementations\Authorization.cs" />
+    <Compile Include="Implementations\OtpGenerator.cs" />
+    <Compile Include="Implementations\OtpService.cs" />
+    <Compile Include="Implementations\PasswordHash.cs" />
+    <Compile Include="Implementations\SqlAuthentication.cs" />
+    <Compile Include="Interfaces\IAuthentication.cs" />
+    <Compile Include="Interfaces\IAuthenticationFactory.cs" />
+    <Compile Include="Interfaces\IAuthorization.cs" />
+    <Compile Include="Interfaces\IOtpSender.cs" />
+    <Compile Include="Interfaces\IOtpService.cs" />
+    <Compile Include="Interfaces\ISecurityEnvironment.cs" />
+    <Compile Include="Model\AuthenticationMethod.cs" />
+    <Compile Include="Model\ContextInitializer.cs" />
+    <Compile Include="Model\EnabledState.cs" />
+    <Compile Include="Model\Action.cs" />
+    <Compile Include="Model\Module.cs" />
+    <Compile Include="Model\NetworkSegment.cs" />
+    <Compile Include="Model\Option.cs" />
+    <Compile Include="Model\OtpSendMode.cs" />
+    <Compile Include="Model\Permission.cs" />
+    <Compile Include="Model\PermissionType.cs" />
+    <Compile Include="Model\Restrictions.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\SecurityContext.cs" />
+    <Compile Include="Model\Session.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityMigrations\201603111734218_InitialCreate.cs" />
+    <Compile Include="SecurityMigrations\201603111734218_InitialCreate.Designer.cs">
+      <DependentUpon>201603111734218_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityMigrations\Configuration.cs" />
+    <Compile Include="Services\ISecurityService.cs" />
+    <Compile Include="Services\SecurityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dragonfly.Core\Dragonfly.Core.csproj">
+      <Project>{61CC0862-7AB0-4D49-B435-0850D33EBF5A}</Project>
+      <Name>Dragonfly.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dragonfly.DataAccess.Core\Dragonfly.DataAccess.Core.csproj">
+      <Project>{8E80E286-C191-4E73-AEE9-8B8C6163CE4D}</Project>
+      <Name>Dragonfly.DataAccess.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dragonfly.DataAccess.EF\Dragonfly.DataAccess.EF.csproj">
+      <Project>{69F73275-9338-4983-8459-7E78880EF943}</Project>
+      <Name>Dragonfly.DataAccess.EF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SecurityMigrations\201603111734218_InitialCreate.resx">
+      <DependentUpon>201603111734218_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
